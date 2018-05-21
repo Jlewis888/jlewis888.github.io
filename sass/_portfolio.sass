@@ -1,0 +1,80 @@
+#portfolio
+  background-color: $color-bg
+  color: $color-white
+
+  .section-header
+    padding-bottom: 10px
+
+  .projects
+    padding-left: 2px
+
+    .card-image
+      position: relative
+      width: 100%
+      transform: scale(1.05)
+      backface-visibility: hidden
+      transition: all .5s
+
+    img
+      height: 300px
+
+  & .project-button
+    position: absolute
+    color: $color-dark-overlay
+    top: 50%
+    left: 50%
+    transform: translate(-50%, 150px)
+    text-align: center
+    opacity: 0
+    transition: all .5s
+    backface-visibility: hidden
+
+  & .project-title
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -150px)
+    text-align: center
+    opacity: 0
+    transition: all .5s
+    backface-visibility: hidden
+    font-size: 32px
+    color: $color-white
+
+  & .card:hover
+    & .project-button
+      opacity: 1
+      transform: translate(-50%, 50px)
+
+    & .project-title
+      opacity: 1
+      transform: translate(-50%, -25px)
+
+    & .card-image
+      transform: scale(1.01)
+      filter: blur(3px) brightness(80%)
+
+
+
+@keyframes moveInLeft
+  0%
+    opacity: 0
+    transform: translate(-100px, -100px)
+
+  100%
+    opacity: 1
+    transform: translate(0,0)
+
+@keyframes moveIn
+  0%
+    opacity: 0
+    transform: translate(100px, -200px)
+
+  100%
+    opacity: 1
+    transform: translate(0, 0)
+
+
+
+
+

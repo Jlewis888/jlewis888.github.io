@@ -1,0 +1,68 @@
+#landing
+  position: relative
+  height: $height-vh
+  min-height: 700px
+  background-size: cover
+  background: url("../img/showcase.jpg") top
+  display: flex
+  justify-content: center
+  align-items: center
+  text-transform: uppercase
+
+  .dark-overlay
+    background-color: rgba($color-dark-overlay, .5)
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: $height-vh
+    min-height: 700px
+
+    .landingItems
+      padding-top: 300px
+
+      .landing-item1
+        animation: moveInLeft 2s ease-in-out
+
+        span
+          animation: moveInLeft 5s ease-in-out 2s
+          animation-fill-mode: backwards
+
+      .landing-item2
+        animation: moveInRight 2s ease-in-out
+
+@keyframes moveInLeft
+  0%
+    opacity: 0
+    transform: translateX(-100px)
+
+  80%
+    transform: translateX(20px)
+
+  100%
+    opacity: 1
+    transform: translateX(0)
+
+@keyframes moveInRight
+  0%
+    opacity: 0
+    transform: translateX(100px)
+
+  80%
+    transform: translateX(-20px)
+
+  100%
+    opacity: 1
+    transform: translateX(0)
+
+@media only screen and (max-width: 600px)
+  .landingItems
+    padding-top: 200px
+
+    h1
+      font-size: 40px
+
+
+
+
+
