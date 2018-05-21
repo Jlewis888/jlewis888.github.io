@@ -40,7 +40,7 @@ $(document).ready(function () {
         } else {
             // If form is successful, user message is sent email and a successful alert is displayed
             $.ajax({
-                url: "https://formspree.io/xwbpnovm",
+                url: "action=\"https://formspree.io/xjrkepwx\"",
                 method: "POST",
                 data: $(this).serialize(),
                 dataType: "json"
