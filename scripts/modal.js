@@ -3,62 +3,62 @@ $(document).ready(function() {
     const modalInfo = {
         devsLinked: {
             title: 'DevsLinked',
-            info: 'DevsLinked is a social hub for developers, where they can link with other developers and discuss the latest technologies',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
             link: 'https://intense-citadel-14261.herokuapp.com/',
             image: [
-                '../img/devslinked.png',
-                '../img/devsLinked2.png',
-                '../img/devsLinked3.png'
+                '../img/devslinked-min.png',
+                '../img/devsLinked2-min.png',
+                '../img/devsLinked3-min.png'
             ]
         },
         yelp: {
             title: 'YelpCamp',
-            info: 'Info goes here',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
             link: 'https://infinite-depths-49863.herokuapp.com/',
             image: [
-                '../img/yelpcamp.png',
-                '../img/yelpcamp2.png',
-                '../img/yelpcamp3.png'
+                '../img/yelpcamp-min.png',
+                '../img/yelpcamp2-min.png',
+                '../img/yelpcamp3-min.png'
             ]
         },
         robo: {
             title: 'RoboFriends',
-            info: 'Info goes here',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
             link: 'https://hidden-journey-32256.herokuapp.com/',
             image: [
-                '../img/robofriends.png',
-                '../img/robofriends2.png',
-                '../img/robofriends3.png',
+                '../img/robofriends-min.png',
+                '../img/robofriends2-min.png',
+                '../img/robofriends3-min.png',
             ]
         },
         smartBrain: {
             title: 'Smart Brain: Face Detection',
-            info: 'Info goes here',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
             link: 'https://calm-gorge-83225.herokuapp.com/',
             image: [
-                '../img/smartBrain.png',
-                '../img/smartBrain2.png',
-                '../img/smartBrain3.png',
+                '../img/smartBrain-min.png',
+                '../img/smartBrain2-min.png',
+                '../img/smartBrain3-min.png',
             ]
         },
         socialLap: {
             title: 'Social Lap',
-            info: 'Info goes here',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
             link: 'https://warm-plains-68563.herokuapp.com/',
             image: [
-                '../img/socialLap.png',
-                '../img/socialLap2.png',
-                '../img/socialLap3.png'
+                '../img/socialLap-min.png',
+                '../img/socialLap2-min.png',
+                '../img/socialLap3-min.png'
             ]
         },
         bizLight: {
             title: 'BizLight',
-            info: 'Info goes here',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
             link: 'https://immense-bayou-24064.herokuapp.com',
             image: [
-                './img/bizLight.png',
-                './img/bizLight2.png',
-                './img/bizLight3.png',
+                './img/bizLight-min.png',
+                './img/bizLight2-min.png',
+                './img/bizLight3-min.png',
             ]
         }
 

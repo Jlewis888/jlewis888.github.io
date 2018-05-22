@@ -3,6 +3,7 @@
   padding: 0
   box-sizing: border-box
 
+
 body
   font-family: 'Roboto', sans-serif
   font-weight: 400
@@ -29,10 +30,18 @@ section
 button, .btn-primary
   background-color: $color-primary
   color: $color-white
+  text-decoration: none
+  border: 0
 
   &:hover
     background-color: $color-white
-    color: $color-primary
+    color: black
+
+  &:focus, &:active
+    outline: none!important
+    box-shadow: none
+    text-decoration: none
+    border: 0
 
 span
   color: $color-primary
@@ -40,3 +49,4 @@ span
 a[href]
   text-decoration: none
   border: 0
+  outline: 0

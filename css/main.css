@@ -31,17 +31,25 @@ section {
 
 button, .btn-primary {
   background-color: #E2254C;
-  color: white; }
+  color: white;
+  text-decoration: none;
+  border: 0; }
   button:hover, .btn-primary:hover {
     background-color: white;
-    color: #E2254C; }
+    color: black; }
+  button:focus, button:active, .btn-primary:focus, .btn-primary:active {
+    outline: none !important;
+    box-shadow: none;
+    text-decoration: none;
+    border: 0; }
 
 span {
   color: #E2254C; }
 
 a[href] {
   text-decoration: none;
-  border: 0; }
+  border: 0;
+  outline: 0; }
 
 #contact {
   color: #000000; }
