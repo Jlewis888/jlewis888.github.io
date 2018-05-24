@@ -35,13 +35,12 @@ button, .btn-primary
 
   &:hover
     background-color: $color-white
-    color: black
+    color: $color-primary
+    outline: none
+    border-color: #E2254C
 
-  &:focus, &:active
-    outline: none!important
-    box-shadow: none
-    text-decoration: none
-    border: 0
+button:focus, button:active
+  text-decoration: none
 
 span
   color: $color-primary
@@ -50,3 +49,5 @@ a[href]
   text-decoration: none
   border: 0
   outline: 0
+
+

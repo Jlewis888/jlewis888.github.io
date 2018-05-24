@@ -8,12 +8,19 @@
   .projects
     padding-left: 2px
 
+    .card
+      background-color: transparent
+      border: none
+
     .card-image
       position: relative
       width: 100%
       transform: scale(1.05)
       backface-visibility: hidden
       transition: all .5s
+      filter: blur(0.3px)
+      border-radius: 10%
+
 
     img
       height: 300px
@@ -40,6 +47,7 @@
     backface-visibility: hidden
     font-size: 32px
     color: $color-white
+
 
   & .card:hover
     & .project-button

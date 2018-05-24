@@ -1,5 +1,5 @@
 // Add a smooth scrolling effect to all links
-$(document).ready(function () {
+$(document).ready(() => {
     $("a").on('click', function(event) {
         if (this.hash !== "") {
             event.preventDefault();
@@ -16,17 +16,23 @@ $(document).ready(function () {
     });
 
     // Toggles between a solid navbar and a transparent navbar background.
-    $(document).scroll(function () {
-        $(".navbar").toggleClass('bg-dark', $(this).scrollTop() > $('#about').offset().top - 100);
+    $(document).scroll( () => {
+        $('.navbar').toggleClass('bg-dark', $(this).scrollTop() > $('#about').offset().top - 100);
+        if ($(this).scrollTop() > 70) {
+            $('.backToTop').css('display', 'block')
+        } else {
+            $('.backToTop').css('display', 'none')
+        }
     });
 
     // Ensures that navbar has a solid background if page resets and view is not on landing page
     if ($(this).scrollTop() > $('#about').offset().top - 100) {
-        $(".navbar").addClass('bg-dark');
+        $('.navbar').addClass('bg-dark');
+
     }
 
 
-    $('#contactForm').submit(function(event) {
+    $('#contactForm').submit((event) => {
         const name = getInputVal('#name');
         const email = getInputVal('#email');
         const phone = getInputVal('#phone');
@@ -74,7 +80,7 @@ $(document).ready(function () {
             const trigger = (elemTrigger) ? trigger : elem;
 
             //
-            trigger.waypoint(function() {
+            trigger.waypoint(() => {
                 elem.addClass('animated').addClass(animationClass);
             },{
                 triggerOnce: true,
