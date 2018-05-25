@@ -114,7 +114,7 @@ header {
   height: 100vh;
   min-height: 700px;
   background-size: cover;
-  background: url("../img/showcase.jpg") top;
+  background: url("../img/showcase-min.jpg") top;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,7 +132,7 @@ header {
       #landing .dark-overlay .landingItems .landing-item1 {
         animation: moveInLeft 2s ease-in-out; }
         #landing .dark-overlay .landingItems .landing-item1 span {
-          animation: moveInLeft 5s ease-in-out 2s;
+          animation: moveInLeft 2s ease-in-out 2s;
           animation-fill-mode: backwards; }
       #landing .dark-overlay .landingItems .landing-item2 {
         animation: moveInRight 2s ease-in-out; }

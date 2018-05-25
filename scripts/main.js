@@ -62,7 +62,7 @@ $(document).ready(() => {
         } else {
             // If form is successful, user message is sent email and a successful alert is displayed
             $.ajax({
-                url: "https://formspree.io/mdzklpzm",
+                url: "https://formspree.io/xlngdlyx",
                 method: "POST",
                 data: $(this).serialize(),
                 dataType: "json"
@@ -95,7 +95,7 @@ $(document).ready(() => {
     // Animation trigger function
     function animationTrigger(items, elemTrigger) {
         let offset = $(window).height();
-        items.each( function() {
+        items.each( () => {
             let elem = $(this);
             let animationClass = elem.attr('data-animation');
             let animationDelay = elem.attr('data-delay');
