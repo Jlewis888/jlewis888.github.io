@@ -30,9 +30,7 @@ $(document).ready(() => {
     // Ensures that navbar has a solid background if page resets and view is not on landing page
     if ($(this).scrollTop() > $('#about').offset().top - 100) {
         $('.navbar').addClass('bg-dark');
-
     }
-
 
     const config = {
         apiKey: "AIzaSyBaC5POZGjyqMuTX85OkLUYTN_PYRpf4yU",
@@ -44,6 +42,7 @@ $(document).ready(() => {
     };
     firebase.initializeApp(config);
 
+    // Reference message collections
     const messagesRef = firebase.database().ref('messages');
 
 
@@ -57,7 +56,9 @@ $(document).ready(() => {
         if(!name || !email || !phone || !message) {
             event.preventDefault();
             $('.alert-danger').css('display','block');
-            $('.alert-success').css('display','none');
+            setTimeout(() => {
+                $('.alert-danger').css('display','none');
+            }, 5000);
         } else {
             // If form is successful, user message is sent email and a successful alert is displayed
             $.ajax({
@@ -68,8 +69,10 @@ $(document).ready(() => {
             });
             saveMessage(name, email, phone, message)
             event.preventDefault();
-            $('.alert-danger').css('display','none');
-            $('.alert-success').css('display','block');
+            $('.alert-success').css('display', 'block');
+            setTimeout(() => {
+                $('.alert-success').css('display', 'none');
+            }, 5000);
             $(this).get(0).reset();
         }
     });
