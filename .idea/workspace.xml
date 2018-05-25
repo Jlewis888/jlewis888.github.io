@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9159fcb-d52c-4aea-abf1-c1215a367070" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +19,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="283" column="94" selection-start-line="283" selection-start-column="94" selection-end-line="283" selection-end-column="94" />
+            <state relative-caret-position="303">
+              <caret line="272" column="114" selection-start-line="272" selection-start-column="114" selection-end-line="272" selection-end-column="114" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -87,6 +87,7 @@
       <find>function</find>
       <find>forms</find>
       <find>&quot;</find>
+      <find>no</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -115,8 +116,8 @@
         <option value="$PROJECT_DIR$/sass/_base.sass" />
         <option value="$PROJECT_DIR$/sass/_landing.sass" />
         <option value="$PROJECT_DIR$/sass/_backToTop.sass" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scripts/main.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -217,12 +218,12 @@
       <workItem from="1527101470757" duration="598000" />
       <workItem from="1527181634617" duration="11690000" />
       <workItem from="1527225501360" duration="5206000" />
-      <workItem from="1527263814503" duration="1770000" />
+      <workItem from="1527263814503" duration="1949000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143384000" />
+    <option name="totallyTimeSpent" value="143563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4480" y="21" width="960" height="1004" extended-state="4" />
@@ -235,7 +236,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" sideWeight="0.50165015" side_tool="true" weight="0.11959958" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.33788395" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33788395" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -570,8 +571,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="283" column="94" selection-start-line="283" selection-start-column="94" selection-end-line="283" selection-end-column="94" />
+        <state relative-caret-position="303">
+          <caret line="272" column="114" selection-start-line="272" selection-start-column="114" selection-end-line="272" selection-end-column="114" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
