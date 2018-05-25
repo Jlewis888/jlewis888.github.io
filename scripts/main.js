@@ -15,9 +15,11 @@ $(document).ready(() => {
         interval: false
     });
 
-    // Toggles between a solid navbar and a transparent navbar background.
     $(document).scroll( () => {
+        // Toggles between a solid navbar and a transparent navbar background.
+
         $('.navbar').toggleClass('bg-dark', $(this).scrollTop() > $('#about').offset().top - 100);
+
         if ($(this).scrollTop() > 70) {
             $('.backToTop').css('display', 'block')
         } else {

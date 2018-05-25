@@ -45,19 +45,18 @@ section {
     font-size: 20px;
     padding-bottom: 40px; }
 
-button, .btn-primary {
+button, .btn {
   background-color: #E2254C;
   color: white;
   text-decoration: none;
   border: 0; }
-  button:hover, .btn-primary:hover {
+  button:hover, .btn:hover {
     background-color: white;
     color: #E2254C;
-    outline: none;
-    border-color: #E2254C; }
-
-button:focus, button:active {
-  text-decoration: none; }
+    outline: none; }
+  button:focus, button:active, .btn:focus, .btn:active {
+    border-color: transparent;
+    outline: none; }
 
 span {
   color: #E2254C; }
@@ -79,9 +78,15 @@ a[href] {
 #contact form input, #contact form label, #contact form textarea {
   width: 100%;
   padding: 0 auto; }
+  #contact form input:focus, #contact form label:focus, #contact form textarea:focus {
+    border-color: black;
+    outline: none; }
 
-#contact form label {
-  text-transform: capitalize; }
+#contact form {
+  padding: 25px;
+  box-shadow: 0 0 20px 0 #E2254C; }
+  #contact form label {
+    text-transform: capitalize; }
 
 footer {
   background-color: #1C1C1C;

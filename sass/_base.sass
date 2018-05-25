@@ -27,7 +27,7 @@ section
     padding-bottom: 40px
 
 
-button, .btn-primary
+button, .btn
   background-color: $color-primary
   color: $color-white
   text-decoration: none
@@ -37,10 +37,10 @@ button, .btn-primary
     background-color: $color-white
     color: $color-primary
     outline: none
-    border-color: #E2254C
 
-button:focus, button:active
-  text-decoration: none
+  &:focus, &:active
+    border-color: transparent
+    outline: none
 
 span
   color: $color-primary
