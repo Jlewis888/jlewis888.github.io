@@ -1,7 +1,7 @@
 // Add a smooth scrolling effect to all links
 $(document).ready(() => {
-    $("a").on('click', function(event) {
-        if (this.hash !== "") {
+    $('a').on('click', function(event) {
+        if (this.hash !== '''') {
             event.preventDefault();
             const hash = this.hash;
             $('html, body').animate({
@@ -33,12 +33,12 @@ $(document).ready(() => {
     }
 
     const config = {
-        apiKey: "AIzaSyBaC5POZGjyqMuTX85OkLUYTN_PYRpf4yU",
-        authDomain: "dancor-b9f3a.firebaseapp.com",
-        databaseURL: "https://dancor-b9f3a.firebaseio.com",
-        projectId: "dancor-b9f3a",
-        storageBucket: "dancor-b9f3a.appspot.com",
-        messagingSenderId: "684078015209"
+        apiKey: 'AIzaSyBaC5POZGjyqMuTX85OkLUYTN_PYRpf4yU',
+        authDomain: 'dancor-b9f3a.firebaseapp.com',
+        databaseURL: 'https://dancor-b9f3a.firebaseio.com',
+        projectId: 'dancor-b9f3a',
+        storageBucket: 'dancor-b9f3a.appspot.com',
+        messagingSenderId: '684078015209'
     };
     firebase.initializeApp(config);
 
@@ -62,10 +62,10 @@ $(document).ready(() => {
         } else {
             // If form is successful, user message is sent email and a successful alert is displayed
             $.ajax({
-                url: "https://formspree.io/xlngdlyx",
-                method: "POST",
+                url: 'https://formspree.io/xlngdlyx',
+                method: 'POST',
                 data: $(this).serialize(),
-                dataType: "json"
+                dataType: 'json'
             });
             saveMessage(name, email, phone, message)
             event.preventDefault();
