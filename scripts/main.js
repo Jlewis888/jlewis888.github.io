@@ -34,6 +34,19 @@ $(document).ready(() => {
     }
 
 
+    const config = {
+        apiKey: "AIzaSyBaC5POZGjyqMuTX85OkLUYTN_PYRpf4yU",
+        authDomain: "dancor-b9f3a.firebaseapp.com",
+        databaseURL: "https://dancor-b9f3a.firebaseio.com",
+        projectId: "dancor-b9f3a",
+        storageBucket: "dancor-b9f3a.appspot.com",
+        messagingSenderId: "684078015209"
+    };
+    firebase.initializeApp(config);
+
+    const messagesRef = firebase.database().ref('messages');
+
+
     $('#contactForm').submit((event) => {
         const name = getInputVal('#name');
         const email = getInputVal('#email');
@@ -53,6 +66,7 @@ $(document).ready(() => {
                 data: $(this).serialize(),
                 dataType: "json"
             });
+            saveMessage(name, email, phone, message)
             event.preventDefault();
             $('.alert-danger').css('display','none');
             $('.alert-success').css('display','block');
@@ -63,6 +77,16 @@ $(document).ready(() => {
     // helper function for contact form input
     function getInputVal(id) {
         return $(id).val();
+    }
+
+    function saveMessage(name, email, phone, message) {
+        let newMessageRef = messagesRef.push();
+        newMessageRef.set({
+            name: name,
+            email: email,
+            phone: phone,
+            message: message
+        });
     }
 
     // Animation trigger function
